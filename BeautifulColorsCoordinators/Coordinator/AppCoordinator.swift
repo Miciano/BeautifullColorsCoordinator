@@ -1,8 +1,8 @@
 import Foundation
 
-final class AppCoordinator: Coordinating {
+final class AppCoordinator: Coordinatable {
     let router: Presentable
-    var childCoordinator: [Coordinating] = []
+    var childCoordinator: [Coordinatable] = []
     
     init(router: Presentable) {
         self.router = router

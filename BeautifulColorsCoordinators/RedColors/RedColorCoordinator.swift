@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class RedColorCoordinator: Coordinating, Finishin {
+final class RedColorCoordinator: Coordinatable, Finishable {
     var finish: (() -> Void)?
     var router: Presentable
     

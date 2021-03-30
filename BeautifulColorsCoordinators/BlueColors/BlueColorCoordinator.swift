@@ -1,6 +1,6 @@
 import Foundation
 
-final class BlueColorCoordinator: Coordinating, Finishin {
+final class BlueColorCoordinator: Coordinatable, Finishable {
     var finish: (() -> Void)?
     var router: Presentable
     

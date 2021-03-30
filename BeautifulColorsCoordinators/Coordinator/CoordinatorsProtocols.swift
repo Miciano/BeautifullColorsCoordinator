@@ -1,13 +1,13 @@
 import UIKit
 
-protocol Coordinating {
+protocol Coordinatable {
     var router: Presentable { get }
     init(router: Presentable)
     func start()
 }
 
-protocol Finishin {
+protocol Finishable {
     var finish: (()->Void)? { get set }
 }
 
-typealias FinishController = UIViewController & Finishin
+typealias FinishController = UIViewController & Finishable

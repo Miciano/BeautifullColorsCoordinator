@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class MagentaViewController: UIViewController, Finishin {
+final class MagentaViewController: UIViewController, Finishable {
     var finish: (() -> Void)?
     
     lazy var okButton: UIButton = {

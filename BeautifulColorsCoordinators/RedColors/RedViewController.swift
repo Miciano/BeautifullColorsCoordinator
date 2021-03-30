@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class RedViewController: UIViewController, Finishin {
+final class RedViewController: UIViewController, Finishable {
     var finish: (() -> Void)?
     
     lazy var okButton: UIButton = {
